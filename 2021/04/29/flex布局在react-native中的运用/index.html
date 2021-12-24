@@ -24,25 +24,38 @@
   <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"hurrygosword.cn","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":true,"nav":null,"activeClass":"changyan"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="十年饮冰 难凉热血">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hurry Go!">
-<meta property="og:url" content="http://hurrygosword.cn/archives/index.html">
+<meta name="description" content="flex 布局1. 按比例分区 填满区域(可以用于全屏幕布局场景)   1flex:1 按比例分区   123456789101112css:&amp;#123;.box1:&amp;#123;	flex:3&amp;#125;,.box2:&amp;#123;	flex:5&amp;#125;,.box3:&amp;#123;	flex:3&amp;#125;&#x2F;&#x2F; 按照父元素块的大小分割 3:5:3&amp;#125;  2. flex-direction">
+<meta property="og:type" content="article">
+<meta property="og:title" content="flex布局在react-native中的运用">
+<meta property="og:url" content="http://hurrygosword.cn/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/index.html">
 <meta property="og:site_name" content="Hurry Go!">
-<meta property="og:description" content="十年饮冰 难凉热血">
+<meta property="og:description" content="flex 布局1. 按比例分区 填满区域(可以用于全屏幕布局场景)   1flex:1 按比例分区   123456789101112css:&amp;#123;.box1:&amp;#123;	flex:3&amp;#125;,.box2:&amp;#123;	flex:5&amp;#125;,.box3:&amp;#123;	flex:3&amp;#125;&#x2F;&#x2F; 按照父元素块的大小分割 3:5:3&amp;#125;  2. flex-direction">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429192009.png">
+<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191936.png">
+<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191934.png">
+<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191932.png">
+<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191928.png">
+<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191927.png">
+<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191921.png">
+<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191918.png">
+<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429192711.png">
+<meta property="article:published_time" content="2021-04-29T10:17:39.000Z">
+<meta property="article:modified_time" content="2021-04-29T11:39:13.702Z">
 <meta property="article:author" content="Sword Song">
+<meta property="article:tag" content="react-native">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429192009.png">
 
 
-<link rel="canonical" href="http://hurrygosword.cn/archives/">
+<link rel="canonical" href="http://hurrygosword.cn/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://hurrygosword.cn/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/","path":"2021/04/29/flex布局在react-native中的运用/","title":"flex布局在react-native中的运用"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>归档 | Hurry Go!</title>
+<title>flex布局在react-native中的运用 | Hurry Go!</title>
   
 
   <script src="/js/third-party/analytics/baidu-analytics.js"></script>
@@ -73,7 +86,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Hurry Go!</h1>
+      <p class="site-title">Hurry Go!</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">sword成长日志</p>
@@ -134,7 +147,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -147,6 +160,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#flex-%E5%B8%83%E5%B1%80"><span class="nav-number">1.</span> <span class="nav-text">flex 布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%8C%89%E6%AF%94%E4%BE%8B%E5%88%86%E5%8C%BA"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. 按比例分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-flex-direction"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. flex-direction</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -215,233 +229,170 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 12 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://hurrygosword.cn/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Sword Song">
+      <meta itemprop="description" content="十年饮冰 难凉热血">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hurry Go!">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          flex布局在react-native中的运用
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="创建时间：2021-04-29 18:17:39 / 修改时间：19:39:13" itemprop="dateCreated datePublished" datetime="2021-04-29T18:17:39+08:00">2021-04-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">基础笔记</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/#SOHUCS" itemprop="discussionUrl">
+        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2021/04/29/flex布局在react-native中的运用/" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="flex-布局"><a href="#flex-布局" class="headerlink" title="flex 布局"></a>flex 布局</h1><h3 id="1-按比例分区"><a href="#1-按比例分区" class="headerlink" title="1. 按比例分区"></a>1. 按比例分区</h3><ul>
+<li><p>填满区域(可以用于全屏幕布局场景)</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flex:1</span><br></pre></td></tr></table></figure></li>
+<li><p>按比例分区</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">css:&#123;</span><br><span class="line">.box1:&#123;</span><br><span class="line">	flex:3</span><br><span class="line">&#125;,</span><br><span class="line">.box2:&#123;</span><br><span class="line">	flex:5</span><br><span class="line">&#125;,</span><br><span class="line">.box3:&#123;</span><br><span class="line">	flex:3</span><br><span class="line">&#125;</span><br><span class="line">// 按照父元素块的大小分割 3:5:3</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="2-flex-direction"><a href="#2-flex-direction" class="headerlink" title="2. flex-direction"></a>2. flex-direction</h3><ul>
+<li><p>决定布局的主轴 默认值为<strong>竖直轴（column）</strong>方向,<strong>水平轴为row</strong></p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flex-direction: row;</span><br><span class="line">flex-direction: column;</span><br></pre></td></tr></table></figure>
+
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429192009.png" alt="colum"></p>
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191936.png" alt="row"></p>
+</li>
+<li><p><code>justifyContent</code>决定其子元素沿主轴的排列方式</p>
+</li>
+<li><p><code>alignItem</code>决定其子元素沿此轴的排列方式</p>
+</li>
+<li><p>排列方式已主轴默认column为例</p>
+<ul>
+<li><p>flex-start</p>
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191934.png" alt="image-20210429185938115"></p>
+</li>
+<li><p>flex-end</p>
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191932.png" alt="image-20210429185959461"></p>
+</li>
+<li><p>center</p>
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191928.png" alt="image-20210429190020934"></p>
+</li>
+<li><p>space-between</p>
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191927.png" alt="image-20210429190058289"></p>
+</li>
+<li><p>space-around</p>
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191921.png" alt="image-20210429190215098"></p>
+</li>
+<li><p>space-evenly</p>
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191918.png" alt="image-2"></p>
+</li>
+</ul>
+</li>
+<li><p><code>alignSelf</code>在父级元素下不影响其他子项的情况进行单个的排列方式</p>
+<ul>
+<li><p>stretch</p>
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429192711.png" alt="image-20210429190718573"></p>
+</li>
+</ul>
+</li>
+</ul>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-05T13:16:13+08:00"
-              content="2021-05-05">
-          05-05
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/05/%E5%9F%BA%E6%9C%AC%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/" itemprop="url">
-            <span itemprop="name">基本引用类型</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/react-native/" rel="tag"># react-native</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/04/27/symbol%E5%AF%B9%E8%B1%A1/" rel="prev" title="ES6 symbol对象">
+                  <i class="fa fa-chevron-left"></i> ES6 symbol对象
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/04/29/JavaScript%E8%AF%AD%E5%8F%A5/" rel="next" title="JavaScript语句">
+                  JavaScript语句 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-04T14:07:11+08:00"
-              content="2021-05-04">
-          05-04
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/04/%E5%8F%98%E9%87%8F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8E%E5%86%85%E5%AD%98/" itemprop="url">
-            <span itemprop="name">变量、作用域与内存'</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-29T22:03:01+08:00"
-              content="2021-04-29">
-          04-29
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/29/JavaScript%E8%AF%AD%E5%8F%A5/" itemprop="url">
-            <span itemprop="name">JavaScript语句</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-29T18:17:39+08:00"
-              content="2021-04-29">
-          04-29
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/" itemprop="url">
-            <span itemprop="name">flex布局在react-native中的运用</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-27T14:29:14+08:00"
-              content="2021-04-27">
-          04-27
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/27/symbol%E5%AF%B9%E8%B1%A1/" itemprop="url">
-            <span itemprop="name">ES6 symbol对象</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-25T14:15:12+08:00"
-              content="2021-04-25">
-          04-25
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/25/ES6%E6%A8%A1%E6%9D%BF%E5%AD%97%E9%9D%A2%E9%87%8F/" itemprop="url">
-            <span itemprop="name">ES6模板字面量</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T12:00:30+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/24/CSS%E5%8A%A8%E7%94%BB%E5%9F%BA%E7%A1%80/" itemprop="url">
-            <span itemprop="name">CSS动画基础</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T11:45:02+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/24/JavaScript%E5%8F%98%E9%87%8F%E7%90%86%E8%A7%A3/" itemprop="url">
-            <span itemprop="name">JavaScript变量理解</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-21T16:59:21+08:00"
-              content="2021-04-21">
-          04-21
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/21/JavaScript%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" itemprop="url">
-            <span itemprop="name">JavaScript基本语法</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-20T15:24:02+08:00"
-              content="2021-04-20">
-          04-20
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/20/%E7%BB%88%E8%BA%AB%E5%AD%A6%E4%B9%A0/" itemprop="url">
-            <span itemprop="name">终身学习</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
 
+
+
+
+    <div class="comments" id="SOHUCS"></div>
 </div>
   </main>
 
