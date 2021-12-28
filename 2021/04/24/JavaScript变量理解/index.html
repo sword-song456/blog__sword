@@ -24,25 +24,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"hurrygosword.cn","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":true,"nav":null,"activeClass":"changyan"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="十年饮冰 难凉热血">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hurry Go!">
-<meta property="og:url" content="http://hurrygosword.cn/archives/2021/index.html">
+<meta name="description" content="JavaScript变量理解var&amp;&amp;let&amp;&amp;const ECMAScript变量是松散类型的，也就意味这，变量可以保存任何类型的数据。每个变量只不过是一个用于保存任意值的命名占位符  var 声明作用域为函数   12345function hh()&amp;#123;	var a &#x3D; &amp;#x27;hh&amp;#x27;&amp;#125;hh();console.log(a);">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript变量理解">
+<meta property="og:url" content="http://hurrygosword.cn/2021/04/24/JavaScript%E5%8F%98%E9%87%8F%E7%90%86%E8%A7%A3/index.html">
 <meta property="og:site_name" content="Hurry Go!">
-<meta property="og:description" content="十年饮冰 难凉热血">
+<meta property="og:description" content="JavaScript变量理解var&amp;&amp;let&amp;&amp;const ECMAScript变量是松散类型的，也就意味这，变量可以保存任何类型的数据。每个变量只不过是一个用于保存任意值的命名占位符  var 声明作用域为函数   12345function hh()&amp;#123;	var a &#x3D; &amp;#x27;hh&amp;#x27;&amp;#125;hh();console.log(a);">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-24T03:45:02.000Z">
+<meta property="article:modified_time" content="2021-04-24T03:59:07.291Z">
 <meta property="article:author" content="Sword Song">
+<meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://hurrygosword.cn/archives/2021/">
+<link rel="canonical" href="http://hurrygosword.cn/2021/04/24/JavaScript%E5%8F%98%E9%87%8F%E7%90%86%E8%A7%A3/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2021/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://hurrygosword.cn/2021/04/24/JavaScript%E5%8F%98%E9%87%8F%E7%90%86%E8%A7%A3/","path":"2021/04/24/JavaScript变量理解/","title":"JavaScript变量理解"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>归档 | Hurry Go!</title>
+<title>JavaScript变量理解 | Hurry Go!</title>
   
 
   <script src="/js/third-party/analytics/baidu-analytics.js"></script>
@@ -73,7 +76,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Hurry Go!</h1>
+      <p class="site-title">Hurry Go!</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">sword成长日志</p>
@@ -134,7 +137,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -147,6 +150,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript%E5%8F%98%E9%87%8F%E7%90%86%E8%A7%A3"><span class="nav-number">1.</span> <span class="nav-text">JavaScript变量理解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#var"><span class="nav-number">1.0.1.</span> <span class="nav-text">var</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#let"><span class="nav-number">1.0.2.</span> <span class="nav-text">let</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#const"><span class="nav-number">1.0.3.</span> <span class="nav-text">const</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E5%91%BD%E9%A3%8E%E6%A0%BC%E4%BB%A5%E5%8F%8A%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5"><span class="nav-number">1.0.4.</span> <span class="nav-text">生命风格以及最佳实践</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -190,190 +194,154 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 8 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://hurrygosword.cn/2021/04/24/JavaScript%E5%8F%98%E9%87%8F%E7%90%86%E8%A7%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Sword Song">
+      <meta itemprop="description" content="十年饮冰 难凉热血">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hurry Go!">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          JavaScript变量理解
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="创建时间：2021-04-24 11:45:02 / 修改时间：11:59:07" itemprop="dateCreated datePublished" datetime="2021-04-24T11:45:02+08:00">2021-04-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">基础笔记</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2021/04/24/JavaScript%E5%8F%98%E9%87%8F%E7%90%86%E8%A7%A3/#SOHUCS" itemprop="discussionUrl">
+        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2021/04/24/JavaScript变量理解/" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="JavaScript变量理解"><a href="#JavaScript变量理解" class="headerlink" title="JavaScript变量理解"></a>JavaScript变量理解</h1><p><strong>var&amp;&amp;let&amp;&amp;const</strong></p>
+<p>ECMAScript变量是<strong>松散类型</strong>的，也就意味这，变量可以保存任何类型的数据。每个变量只不过是一个用于<strong>保存任意值的命名占位符</strong></p>
+<hr>
+<h3 id="var"><a href="#var" class="headerlink" title="var"></a>var</h3><ul>
+<li><p>声明作用域为函数</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function hh()&#123;</span><br><span class="line">	var a = &#x27;hh&#x27;</span><br><span class="line">&#125;</span><br><span class="line">hh();</span><br><span class="line">console.log(a);   // 错误</span><br></pre></td></tr></table></figure></li>
+<li><p>var 声明提升</p>
+<p>  所谓提升，就是将声明拉到函数作用域的顶部 （只拉声明 ，不拉赋值）</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function com()&#123;</span><br><span class="line">	console.log(a);</span><br><span class="line">	var a = &#x27;hh&#x27;</span><br><span class="line">&#125;</span><br><span class="line">com()   // undefined 并未出现报错</span><br><span class="line"></span><br><span class="line">// 上述代码等于</span><br><span class="line"></span><br><span class="line">function com()&#123;</span><br><span class="line">	var a;</span><br><span class="line">	console.log(a);</span><br><span class="line">	a = &#x27;hh&#x27;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3><ul>
+<li><p>块作用域  块 ===》 <code>&#123;&#125;</code></p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if(true) &#123;</span><br><span class="line">	let age = 26;</span><br><span class="line">	console.log(age);  // 26</span><br><span class="line">&#125;</span><br><span class="line">console,log(age);    // ReferenceError:26未定义</span><br></pre></td></tr></table></figure></li>
+<li><p>声明不会被提升</p>
+</li>
+<li><p>可全局声明 ，但不会成为window对象的属性（var）</p>
+</li>
+<li><p>不允许重复声明</p>
+</li>
+</ul>
+<h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3><ul>
+<li><p>与let相似 唯一一个重要的区别是<strong>声明变量时必须要初始化，且不允许修改</strong></p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const a ;  // 错误</span><br><span class="line">cosnt a = 5 ; </span><br><span class="line"></span><br><span class="line">// const 也不允许重复声明</span><br><span class="line">const name = &#x27;白小剑&#x27;</span><br><span class="line">const name = &#x27;秦始皇&#x27; // SyntaxError</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="生命风格以及最佳实践"><a href="#生命风格以及最佳实践" class="headerlink" title="生命风格以及最佳实践"></a>生命风格以及最佳实践</h3><ul>
+<li><p>不使用 <strong>var</strong></p>
+</li>
+<li><p><strong>const</strong> 优先 <strong>let</strong> 次之</p>
+<p>  使用<strong>const</strong> 可以使浏览器强制保持变量不变 ， 只在提前知道变量会修改时使用<strong>let</strong>来声明</p>
+</li>
+</ul>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-04T14:07:11+08:00"
-              content="2021-05-04">
-          05-04
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/05/04/%E5%8F%98%E9%87%8F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8E%E5%86%85%E5%AD%98/" itemprop="url">
-            <span itemprop="name">变量、作用域与内存'</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/04/21/JavaScript%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" rel="prev" title="JavaScript基本语法">
+                  <i class="fa fa-chevron-left"></i> JavaScript基本语法
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/04/24/CSS%E5%8A%A8%E7%94%BB%E5%9F%BA%E7%A1%80/" rel="next" title="CSS动画基础">
+                  CSS动画基础 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-29T18:17:39+08:00"
-              content="2021-04-29">
-          04-29
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/" itemprop="url">
-            <span itemprop="name">flex布局在react-native中的运用</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-27T14:29:14+08:00"
-              content="2021-04-27">
-          04-27
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/27/symbol%E5%AF%B9%E8%B1%A1/" itemprop="url">
-            <span itemprop="name">ES6 symbol对象</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-25T14:15:12+08:00"
-              content="2021-04-25">
-          04-25
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/25/ES6%E6%A8%A1%E6%9D%BF%E5%AD%97%E9%9D%A2%E9%87%8F/" itemprop="url">
-            <span itemprop="name">ES6模板字面量</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T12:00:30+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/24/CSS%E5%8A%A8%E7%94%BB%E5%9F%BA%E7%A1%80/" itemprop="url">
-            <span itemprop="name">CSS动画基础</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-24T11:45:02+08:00"
-              content="2021-04-24">
-          04-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/24/JavaScript%E5%8F%98%E9%87%8F%E7%90%86%E8%A7%A3/" itemprop="url">
-            <span itemprop="name">JavaScript变量理解</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-21T16:59:21+08:00"
-              content="2021-04-21">
-          04-21
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/21/JavaScript%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" itemprop="url">
-            <span itemprop="name">JavaScript基本语法</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-04-20T15:24:02+08:00"
-              content="2021-04-20">
-          04-20
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/04/20/%E7%BB%88%E8%BA%AB%E5%AD%A6%E4%B9%A0/" itemprop="url">
-            <span itemprop="name">终身学习</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
 
+
+
+
+    <div class="comments" id="SOHUCS"></div>
 </div>
   </main>
 

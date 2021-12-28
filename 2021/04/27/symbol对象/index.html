@@ -24,38 +24,31 @@
   <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"hurrygosword.cn","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":true,"nav":null,"activeClass":"changyan"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="flex 布局1. 按比例分区 填满区域(可以用于全屏幕布局场景)   1flex:1 按比例分区   123456789101112css:&amp;#123;.box1:&amp;#123;	flex:3&amp;#125;,.box2:&amp;#123;	flex:5&amp;#125;,.box3:&amp;#123;	flex:3&amp;#125;&#x2F;&#x2F; 按照父元素块的大小分割 3:5:3&amp;#125;  2. flex-direction">
+<meta name="description" content="Symbol（符号） 类型1. 使用场景 确保对象属性的使用的唯一标识符 创建唯一记号，用作非字符串形式的对象属性  2. 声明定义方式 常规   123456789101112    let hh &#x3D; Symbol(&amp;#x27;你好&amp;#x27;);let edu &#x3D; Symbol(&amp;#x27;你好&amp;#x27;);&#x2F;&#x2F; ‘’ 里面写描述console.log(hh &#x3D;&#x3D; edu)console.l">
 <meta property="og:type" content="article">
-<meta property="og:title" content="flex布局在react-native中的运用">
-<meta property="og:url" content="http://hurrygosword.cn/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/index.html">
+<meta property="og:title" content="ES6 symbol对象">
+<meta property="og:url" content="http://hurrygosword.cn/2021/04/27/symbol%E5%AF%B9%E8%B1%A1/index.html">
 <meta property="og:site_name" content="Hurry Go!">
-<meta property="og:description" content="flex 布局1. 按比例分区 填满区域(可以用于全屏幕布局场景)   1flex:1 按比例分区   123456789101112css:&amp;#123;.box1:&amp;#123;	flex:3&amp;#125;,.box2:&amp;#123;	flex:5&amp;#125;,.box3:&amp;#123;	flex:3&amp;#125;&#x2F;&#x2F; 按照父元素块的大小分割 3:5:3&amp;#125;  2. flex-direction">
+<meta property="og:description" content="Symbol（符号） 类型1. 使用场景 确保对象属性的使用的唯一标识符 创建唯一记号，用作非字符串形式的对象属性  2. 声明定义方式 常规   123456789101112    let hh &#x3D; Symbol(&amp;#x27;你好&amp;#x27;);let edu &#x3D; Symbol(&amp;#x27;你好&amp;#x27;);&#x2F;&#x2F; ‘’ 里面写描述console.log(hh &#x3D;&#x3D; edu)console.l">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429192009.png">
-<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191936.png">
-<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191934.png">
-<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191932.png">
-<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191928.png">
-<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191927.png">
-<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191921.png">
-<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191918.png">
-<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429192711.png">
-<meta property="article:published_time" content="2021-04-29T10:17:39.000Z">
-<meta property="article:modified_time" content="2021-04-29T11:39:13.702Z">
+<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/image-20210428092009035.png">
+<meta property="og:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/image-20210428092714562.png">
+<meta property="article:published_time" content="2021-04-27T06:29:14.000Z">
+<meta property="article:modified_time" content="2021-10-24T14:10:35.912Z">
 <meta property="article:author" content="Sword Song">
-<meta property="article:tag" content="react-native">
+<meta property="article:tag" content="ES6">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429192009.png">
+<meta name="twitter:image" content="https://gitee.com/song-zejian/markdown_image/raw/master/img/image-20210428092009035.png">
 
 
-<link rel="canonical" href="http://hurrygosword.cn/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/">
+<link rel="canonical" href="http://hurrygosword.cn/2021/04/27/symbol%E5%AF%B9%E8%B1%A1/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://hurrygosword.cn/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/","path":"2021/04/29/flex布局在react-native中的运用/","title":"flex布局在react-native中的运用"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://hurrygosword.cn/2021/04/27/symbol%E5%AF%B9%E8%B1%A1/","path":"2021/04/27/symbol对象/","title":"ES6 symbol对象"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>flex布局在react-native中的运用 | Hurry Go!</title>
+<title>ES6 symbol对象 | Hurry Go!</title>
   
 
   <script src="/js/third-party/analytics/baidu-analytics.js"></script>
@@ -160,7 +153,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#flex-%E5%B8%83%E5%B1%80"><span class="nav-number">1.</span> <span class="nav-text">flex 布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%8C%89%E6%AF%94%E4%BE%8B%E5%88%86%E5%8C%BA"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. 按比例分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-flex-direction"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. flex-direction</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Symbol%EF%BC%88%E7%AC%A6%E5%8F%B7%EF%BC%89-%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.</span> <span class="nav-text">Symbol（符号） 类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. 使用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%A3%B0%E6%98%8E%E5%AE%9A%E4%B9%89%E6%96%B9%E5%BC%8F"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. 声明定义方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E8%A7%A3%E5%86%B3%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%80%A6%E5%90%88%E9%97%AE%E9%A2%98"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. 解决字符串耦合问题</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -215,7 +208,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://hurrygosword.cn/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/">
+    <link itemprop="mainEntityOfPage" href="http://hurrygosword.cn/2021/04/27/symbol%E5%AF%B9%E8%B1%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -228,7 +221,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          flex布局在react-native中的运用
+          ES6 symbol对象
         </h1>
 
         <div class="post-meta-container">
@@ -238,9 +231,24 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-04-29 18:17:39 / 修改时间：19:39:13" itemprop="dateCreated datePublished" datetime="2021-04-29T18:17:39+08:00">2021-04-29</time>
+      <time title="创建时间：2021-04-27 14:29:14" itemprop="dateCreated datePublished" datetime="2021-04-27T14:29:14+08:00">2021-04-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2021-10-24 22:10:35" itemprop="dateModified" datetime="2021-10-24T22:10:35+08:00">2021-10-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">基础笔记</span></a>
+        </span>
     </span>
 
   
@@ -260,8 +268,8 @@
       <span class="post-meta-item-text">Changyan：</span>
     
     
-      <a title="changyan" href="/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/#SOHUCS" itemprop="discussionUrl">
-        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2021/04/29/flex布局在react-native中的运用/" itemprop="commentCount"></span>
+      <a title="changyan" href="/2021/04/27/symbol%E5%AF%B9%E8%B1%A1/#SOHUCS" itemprop="discussionUrl">
+        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2021/04/27/symbol对象/" itemprop="commentCount"></span>
       </a>
     
   </span>
@@ -276,51 +284,30 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="flex-布局"><a href="#flex-布局" class="headerlink" title="flex 布局"></a>flex 布局</h1><h3 id="1-按比例分区"><a href="#1-按比例分区" class="headerlink" title="1. 按比例分区"></a>1. 按比例分区</h3><ul>
-<li><p>填满区域(可以用于全屏幕布局场景)</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flex:1</span><br></pre></td></tr></table></figure></li>
-<li><p>按比例分区</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">css:&#123;</span><br><span class="line">.box1:&#123;</span><br><span class="line">	flex:3</span><br><span class="line">&#125;,</span><br><span class="line">.box2:&#123;</span><br><span class="line">	flex:5</span><br><span class="line">&#125;,</span><br><span class="line">.box3:&#123;</span><br><span class="line">	flex:3</span><br><span class="line">&#125;</span><br><span class="line">// 按照父元素块的大小分割 3:5:3</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+        <h1 id="Symbol（符号）-类型"><a href="#Symbol（符号）-类型" class="headerlink" title="Symbol（符号） 类型"></a>Symbol（符号） 类型</h1><h3 id="1-使用场景"><a href="#1-使用场景" class="headerlink" title="1. 使用场景"></a>1. 使用场景</h3><ul>
+<li>确保对象属性的使用的<strong>唯一标识符</strong></li>
+<li>创建唯一记号，用作非字符串形式的对象属性</li>
 </ul>
-<h3 id="2-flex-direction"><a href="#2-flex-direction" class="headerlink" title="2. flex-direction"></a>2. flex-direction</h3><ul>
-<li><p>决定布局的主轴 默认值为<strong>竖直轴（column）</strong>方向,<strong>水平轴为row</strong></p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flex-direction: row;</span><br><span class="line">flex-direction: column;</span><br></pre></td></tr></table></figure>
+<h3 id="2-声明定义方式"><a href="#2-声明定义方式" class="headerlink" title="2. 声明定义方式"></a>2. 声明定义方式</h3><ul>
+<li><p>常规</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">    </span><br><span class="line">let hh = Symbol(&#x27;你好&#x27;);</span><br><span class="line">let edu = Symbol(&#x27;你好&#x27;);</span><br><span class="line">// ‘’ 里面写描述</span><br><span class="line">console.log(hh == edu)</span><br><span class="line">console.log(hh)</span><br><span class="line">console.log(hh.description) // 输出描述</span><br><span class="line">/*</span><br><span class="line">false</span><br><span class="line">Symbol(你好)</span><br><span class="line">你好</span><br><span class="line">*/</span><br></pre></td></tr></table></figure></li>
+<li><p>symbol.for 定义全局注册表,并记录在内存中（运行时的不同部分需要共享和重用符号实例）</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">let com = Symbol.for(&#x27;hh&#x27;)</span><br><span class="line">    let mmm = Symbol.for(&#x27;hh&#x27;)</span><br><span class="line">    console.log(com == mmm)</span><br><span class="line">    /*</span><br><span class="line">    true</span><br><span class="line">    */</span><br></pre></td></tr></table></figure></li>
+<li><p>symbol.keyFor()查询<strong>全局注册表</strong></p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">\\ 全局</span><br><span class="line">let s = symbol.for(&#x27;hh&#x27;)</span><br><span class="line">symbol.keyFor(s)  // hh</span><br><span class="line"></span><br><span class="line">\\ 普通</span><br><span class="line">let s = symbol(&#x27;hh&#x27;)</span><br><span class="line">symbol.keyFor(s)  // undefined</span><br></pre></td></tr></table></figure>
 
-<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429192009.png" alt="colum"></p>
-<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191936.png" alt="row"></p>
-</li>
-<li><p><code>justifyContent</code>决定其子元素沿主轴的排列方式</p>
-</li>
-<li><p><code>alignItem</code>决定其子元素沿此轴的排列方式</p>
-</li>
-<li><p>排列方式已主轴默认column为例</p>
-<ul>
-<li><p>flex-start</p>
-<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191934.png" alt="image-20210429185938115"></p>
-</li>
-<li><p>flex-end</p>
-<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191932.png" alt="image-20210429185959461"></p>
-</li>
-<li><p>center</p>
-<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191928.png" alt="image-20210429190020934"></p>
-</li>
-<li><p>space-between</p>
-<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191927.png" alt="image-20210429190058289"></p>
-</li>
-<li><p>space-around</p>
-<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191921.png" alt="image-20210429190215098"></p>
-</li>
-<li><p>space-evenly</p>
-<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429191918.png" alt="image-2"></p>
 </li>
 </ul>
+<h3 id="3-解决字符串耦合问题"><a href="#3-解决字符串耦合问题" class="headerlink" title="3. 解决字符串耦合问题"></a>3. 解决字符串耦合问题</h3><ul>
+<li><p>声明时，key相同，数据不会重复显示</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let hh =&#123;</span><br><span class="line">    song:&#123;js:100 , css :50&#125;,</span><br><span class="line">    song:&#123;js:60 , css:100&#125;</span><br><span class="line">&#125;</span><br><span class="line">console.log(hh)</span><br></pre></td></tr></table></figure>
+
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/image-20210428092009035.png" alt="image-20210428092009035"></p>
 </li>
-<li><p><code>alignSelf</code>在父级元素下不影响其他子项的情况进行单个的排列方式</p>
-<ul>
-<li><p>stretch</p>
-<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210429192711.png" alt="image-20210429190718573"></p>
-</li>
-</ul>
+<li><p>声明时加上symbol</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> let user1 =&#123;</span><br><span class="line">        name:&#x27;song&#x27;,</span><br><span class="line">        key:Symbol(&#x27;song&#x27;)</span><br><span class="line">    &#125;;</span><br><span class="line">    let user2 =&#123;</span><br><span class="line">        name:&#x27;song&#x27;,</span><br><span class="line">        key:Symbol(&#x27;song&#x27;)</span><br><span class="line">    &#125;;</span><br><span class="line">let hh =&#123;</span><br><span class="line">    [user1.key]:&#123;js:100 , css :50&#125;,</span><br><span class="line">    [user2.key]:&#123;js:60 , css:100&#125;</span><br><span class="line">&#125;;</span><br><span class="line">console.log(hh);</span><br></pre></td></tr></table></figure>
+
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/image-20210428092714562.png" alt="image-20210428092714562"></p>
 </li>
 </ul>
 
@@ -332,20 +319,20 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/react-native/" rel="tag"># react-native</a>
+              <a href="/tags/ES6/" rel="tag"># ES6</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/04/27/symbol%E5%AF%B9%E8%B1%A1/" rel="prev" title="ES6 symbol对象">
-                  <i class="fa fa-chevron-left"></i> ES6 symbol对象
+                <a href="/2021/04/25/ES6%E6%A8%A1%E6%9D%BF%E5%AD%97%E9%9D%A2%E9%87%8F/" rel="prev" title="ES6模板字面量">
+                  <i class="fa fa-chevron-left"></i> ES6模板字面量
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/05/04/%E5%8F%98%E9%87%8F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8E%E5%86%85%E5%AD%98/" rel="next" title="变量、作用域与内存'">
-                  变量、作用域与内存' <i class="fa fa-chevron-right"></i>
+                <a href="/2021/04/29/flex%E5%B8%83%E5%B1%80%E5%9C%A8react-native%E4%B8%AD%E7%9A%84%E8%BF%90%E7%94%A8/" rel="next" title="flex布局在react-native中的运用">
+                  flex布局在react-native中的运用 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
